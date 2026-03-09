@@ -5,20 +5,20 @@
 class YandexMcp < Formula
   desc ""
   homepage ""
-  version "0.3.2"
+  version "0.4.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/n-r-w/yandex-mcp/releases/download/v0.3.2/yandex-mcp-0.3.2-darwin-amd64.tar.gz"
-      sha256 "56eb20608b4fe0c732a3605559270a8aa166f08d0a0602f04437d33271b6a2b2"
+      url "https://github.com/n-r-w/yandex-mcp/releases/download/v0.4.0/yandex-mcp-0.4.0-darwin-amd64.tar.gz"
+      sha256 "3ab830c6cde590321095880a6fd7d9f28092a8dd4879ee13dddd4e955214b1eb"
 
       def install
         bin.install "yandex-mcp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/n-r-w/yandex-mcp/releases/download/v0.3.2/yandex-mcp-0.3.2-darwin-arm64.tar.gz"
-      sha256 "3938f2b54eb065d1866af344ccea9acbf0e6a04e92e6612421373d64a0aff9f9"
+      url "https://github.com/n-r-w/yandex-mcp/releases/download/v0.4.0/yandex-mcp-0.4.0-darwin-arm64.tar.gz"
+      sha256 "7bd1d0613686faadaabff24719d9c9d95a332c9b74efc39adbd3b56f6a491e73"
 
       def install
         bin.install "yandex-mcp"
@@ -28,15 +28,15 @@ class YandexMcp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/n-r-w/yandex-mcp/releases/download/v0.3.2/yandex-mcp-0.3.2-linux-amd64.tar.gz"
-      sha256 "91151beced016de687c4b3cc60434924be394099a5fa7fcf554825c59e722ca6"
+      url "https://github.com/n-r-w/yandex-mcp/releases/download/v0.4.0/yandex-mcp-0.4.0-linux-amd64.tar.gz"
+      sha256 "ff568808e68f9bbc7802dce5d20a3869be30e945a3266c1fa0766a246c72747d"
       def install
         bin.install "yandex-mcp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/n-r-w/yandex-mcp/releases/download/v0.3.2/yandex-mcp-0.3.2-linux-arm64.tar.gz"
-      sha256 "d117f08b1176ee482a639923c1a1dfff9dcb480f10c4fef0ffc799aee5049f38"
+      url "https://github.com/n-r-w/yandex-mcp/releases/download/v0.4.0/yandex-mcp-0.4.0-linux-arm64.tar.gz"
+      sha256 "6245bc8e7d595f7b0b7fb4c429aa6ec6eeb16f6f6c79e3ea161a62d990570a09"
       def install
         bin.install "yandex-mcp"
       end
