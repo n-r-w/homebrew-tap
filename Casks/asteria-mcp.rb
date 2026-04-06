@@ -3,7 +3,7 @@ cask "asteria-mcp" do
   name "asteria-mcp"
   desc "MCP server for symbolic code search over multiple language servers."
   homepage "https://github.com/n-r-w/asteria"
-  version "0.0.4"
+  version "0.0.6"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "asteria-mcp" do
   on_macos do
     on_intel do
       url "https://github.com/n-r-w/asteria/releases/download/v#{version}/asteria-#{version}-darwin-amd64.tar.gz"
-      sha256 "6aface26e8424e5e9751561c0eaa294ddf267ce4ded7808738029c313c0e62f0"
+      sha256 "57bd8ffbbbf389afaac15b212381e58f4f10b660eead2e5380b3d3bd33a71200"
     end
     on_arm do
       url "https://github.com/n-r-w/asteria/releases/download/v#{version}/asteria-#{version}-darwin-arm64.tar.gz"
-      sha256 "1d18427b8a75b6985edcd504991458beee519c8a8949c2a9758b75bb0ac1ec99"
+      sha256 "573185f269ff6271f894f0c10931bbee7f3c98d13f0a8dc9cdd8d9a42a948760"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/n-r-w/asteria/releases/download/v#{version}/asteria-#{version}-linux-amd64.tar.gz"
-      sha256 "ea86d5685649a79564cbe49326e98a4c4bdd28d590fcbe08104b913787113045"
+      sha256 "35cb854fb059f8c6c91af8af56c4581c2fe3a1ae93b3f37e71bae197efd3c776"
     end
     on_arm do
       url "https://github.com/n-r-w/asteria/releases/download/v#{version}/asteria-#{version}-linux-arm64.tar.gz"
-      sha256 "20bf9afaf4268e64fe5053a57b33a1c5d34f0f84018e968cc768895e24555ae2"
+      sha256 "4ec1344f79cf62479a26b7c5fe34a94eb33340fa11e7157dffec53ab9b773b2b"
     end
   end
 
