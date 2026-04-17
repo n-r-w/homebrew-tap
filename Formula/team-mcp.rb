@@ -5,20 +5,20 @@
 class TeamMcp < Formula
   desc ""
   homepage ""
-  version "1.1.3"
+  version "1.1.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/n-r-w/team-mcp/releases/download/v1.1.3/team-mcp-1.1.3-darwin-amd64.tar.gz"
-      sha256 "51211f07c3ab1dee2b1d7483601c92a96421c620c4ce81bd1e95cc141f1918e7"
+      url "https://github.com/n-r-w/team-mcp/releases/download/v1.1.4/team-mcp-1.1.4-darwin-amd64.tar.gz"
+      sha256 "bd6392e2cce39904646bbf6b4c9aba8201863c53a687992661492988bffa1ae2"
 
       def install
         bin.install "team-mcp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/n-r-w/team-mcp/releases/download/v1.1.3/team-mcp-1.1.3-darwin-arm64.tar.gz"
-      sha256 "0fbf581e73ca0c3c32ca8c6e6fcec7fd80749b0f358d5714f3598f54f5342aaa"
+      url "https://github.com/n-r-w/team-mcp/releases/download/v1.1.4/team-mcp-1.1.4-darwin-arm64.tar.gz"
+      sha256 "a9d9e62f4c391ff017c7dfae1f2c46b4f97dda140cff4f0dabdb58deeaa0b98b"
 
       def install
         bin.install "team-mcp"
@@ -28,15 +28,15 @@ class TeamMcp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/n-r-w/team-mcp/releases/download/v1.1.3/team-mcp-1.1.3-linux-amd64.tar.gz"
-      sha256 "a65885a2961875864d32814d3f6494b7d7d5bdb2266fe8f5c325ef07526d0f3f"
+      url "https://github.com/n-r-w/team-mcp/releases/download/v1.1.4/team-mcp-1.1.4-linux-amd64.tar.gz"
+      sha256 "47bded0e381efa5a92195586e47e28af4013c22b131c6fa6d67ffaca65de6cbc"
       def install
         bin.install "team-mcp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/n-r-w/team-mcp/releases/download/v1.1.3/team-mcp-1.1.3-linux-arm64.tar.gz"
-      sha256 "ea2c826329e730b619e6bc4ee313ed99bf63dc72e4dee3b0b9784518b99ab509"
+      url "https://github.com/n-r-w/team-mcp/releases/download/v1.1.4/team-mcp-1.1.4-linux-arm64.tar.gz"
+      sha256 "495ff9b749bc30a54cba5aa2e7e4ebddf6dc5e73abe394d8e7ad0e9d60a33666"
       def install
         bin.install "team-mcp"
       end
