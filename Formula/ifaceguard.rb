@@ -5,20 +5,20 @@
 class Ifaceguard < Formula
   desc ""
   homepage ""
-  version "0.1.0"
+  version "1.0.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/n-r-w/ifaceguard/releases/download/v0.1.0/ifaceguard_0.1.0_darwin_amd64.tar.gz"
-      sha256 "e7b0c9649d78c004972df4fe1e595e208fd30edc0121d8159bf6d745e2e755b1"
+      url "https://github.com/n-r-w/ifaceguard/releases/download/v1.0.0/ifaceguard_1.0.0_darwin_amd64.tar.gz"
+      sha256 "9498401aaedf9355b157501ff55fa90dc9d8a2890b024dc33decb9668bec7688"
 
       define_method(:install) do
         bin.install "ifaceguard"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/n-r-w/ifaceguard/releases/download/v0.1.0/ifaceguard_0.1.0_darwin_arm64.tar.gz"
-      sha256 "1ee0fe6be043b1fe21750a6801ea94c75ed0c83179936285aa0ba0deffcfc360"
+      url "https://github.com/n-r-w/ifaceguard/releases/download/v1.0.0/ifaceguard_1.0.0_darwin_arm64.tar.gz"
+      sha256 "985f811197ef26518ba451e9a16d0b35700a71670dff48cd5d4b8a3eb73b1551"
 
       define_method(:install) do
         bin.install "ifaceguard"
@@ -28,15 +28,15 @@ class Ifaceguard < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/n-r-w/ifaceguard/releases/download/v0.1.0/ifaceguard_0.1.0_linux_amd64.tar.gz"
-      sha256 "1ad264590730105dc87c8fe3daa4e261084bd66aca1066efeff4ad0d50b34877"
+      url "https://github.com/n-r-w/ifaceguard/releases/download/v1.0.0/ifaceguard_1.0.0_linux_amd64.tar.gz"
+      sha256 "72e2815ad368d4697318ce8b2cbdcb8db4f2740d4afb64d8db2ed9cd4f18cd41"
       define_method(:install) do
         bin.install "ifaceguard"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/n-r-w/ifaceguard/releases/download/v0.1.0/ifaceguard_0.1.0_linux_arm64.tar.gz"
-      sha256 "226354187f1191c9fd4cd7cef9975730726fbc17eb2743227f7ada469e13c3aa"
+      url "https://github.com/n-r-w/ifaceguard/releases/download/v1.0.0/ifaceguard_1.0.0_linux_arm64.tar.gz"
+      sha256 "bf06dd2f0967c4ed6af6191c8fd939dcff14e048a7e1414e109a15d331a745d7"
       define_method(:install) do
         bin.install "ifaceguard"
       end
